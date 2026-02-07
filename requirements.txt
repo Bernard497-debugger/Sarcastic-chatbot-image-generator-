@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+Flask-Limiter
+requests
+Pillow
+gunicorn
