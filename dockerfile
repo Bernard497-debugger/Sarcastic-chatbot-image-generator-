@@ -1,14 +1,8 @@
 FROM python:3.11-slim
 
-# Install system dependencies for Pillow AND PostgreSQL
+# Install system fonts for Pillow
 RUN apt-get update && apt-get install -y \
-    libfreetype6-dev \
-    libjpeg-dev \
-    zlib1g-dev \
     fonts-dejavu-core \
-    libpq-dev \
-    gcc \
-    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
